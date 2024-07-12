@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	border: 2px solid #333;
+	padding: 10px;
+	height: 350px;
+	background-color: #f9f9f9;
+	flex-direction: row;
+}
+
+.item {
+	background-color: #007bff;
+	color: white;
+	padding: 20px;
+	margin: 10px;
+	text-align: center;
+	border-radius: 5px;
+	width: 150;
+	text-align: center;
+}
+
+</style>
+</head>
+<body>
+	<h2>align-items: stretch</h2>
+	<div class="container" style="align-items: stretch;">
+		<div class="item">아이템 1</div>
+		<div class="item">아이템 2</div>
+		<div class="item">아이템 3</div>
+		<div class="item">아이템 4</div>
+	</div>
+
+	<h2>align-items: flex-start</h2>
+	<div class="container" style="align-items: flex-start;">
+		<div class="item">아이템 1</div>
+		<div class="item">아이템 2</div>
+		<div class="item">아이템 3</div>
+		<div class="item">아이템 4</div>
+	</div>
+
+	<h2>align-items: flex-end</h2>
+	<div class="container" style="align-items: flex-end;">
+		<div class="item">아이템 1</div>
+		<div class="item">아이템 2</div>
+		<div class="item">아이템 3</div>
+		<div class="item">아이템 4</div>
+	</div>
+
+	<h2>align-items: center</h2>
+	<div class="container" style="align-items: center;">
+		<div class="item">아이템 1</div>
+		<div class="item">아이템 2</div>
+		<div class="item">아이템 3</div>
+		<div class="item">아이템 4</div>
+	</div>
+
+	<h2>align-items: baseline</h2>
+	<div class="container" style="align-items: baseline;">
+		<div class="item">아이템 1</div>
+		<div class="item">아이템 2</div>
+		<div class="item">아이템 3</div>
+		<div class="item">아이템 4</div>
+	</div>
+
+	<h2>정 중 앙</h2>
+	<div class="container" style="align-items: center; justify-content: center">
+		<div class="item">아이템</div>
+		<div class="item">아이템</div>
+		<div class="item">아이템</div>
+		<div class="item">아이템</div>
+	</div>
+
+	<h2>오른쪽 맨아래</h2>
+	<div class="container" style="align-items: flex-end; justify-content: flex-end">
+		<div class="item">아이템</div>
+		<div class="item">아이템</div>
+		<div class="item">아이템</div>
+		<div class="item">아이템</div>
+	</div>
+
+	<h2>오른쪽 맨위</h2>
+	<div class="container" style="align-items: flex-start; justify-content: flex-end">
+		<div class="item">아이템</div>
+		<div class="item">아이템</div>
+		<div class="item">아이템</div>
+		<div class="item">아이템</div>
+	</div>
+
+	<h2>왼쪽 맨위</h2>
+	<div class="container" style="align-items: flex-start; justify-content: flex-start">
+		<div class="item">아이템</div>
+		<div class="item">아이템</div>
+		<div class="item">아이템</div>
+		<div class="item">아이템</div>
+	</div>
+
+	<h2>왼쪽 맨아래</h2>
+	<div class="container" style="align-items: flex-start; justify-content: flex-end">
+		<div class="item">아이템</div>
+		<div class="item">아이템</div>
+		<div class="item">아이템</div>
+		<div class="item">아이템</div>
+	</div>
+
+
+</body>
+</html>

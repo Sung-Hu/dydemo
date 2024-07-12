@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container{
+            width: 500px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .gohome{
+        display: flex;
+    align-content: flex-end;
+    flex-direction: column-reverse;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+        label{
+            margin-bottom: 10px;
+        }
+
+        input[type="number"] {
+            height: 30px;
+            border: 1px solid #bababa;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        input[type="submit"] {
+                height: 40px;
+                border-radius: 5px;
+                border: 0;
+                background-color: black;
+                color: #fff;
+        }
+        input[type="submit"]:hover{
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CM 인치 변환기</h1>
+        <form action= "form_page.jsp" method="post">
+            <label for = "num1">cm를 입력하세요</label>
+            <input type="number" id="num1" name="num1" required="required">
+
+            <input type="submit" value="계산 요청하기">
+        </form>
+    <div class="gohome"><button type="button" onclick="location.href='header.jsp'">처음화면으로...</button></div>
+    </div>
+</body>
+
+</html>
