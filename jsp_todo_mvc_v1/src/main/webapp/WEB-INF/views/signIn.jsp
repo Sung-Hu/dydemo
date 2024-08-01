@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -131,12 +132,10 @@ body {
         <img src="https://cdn.icon-icons.com/icons2/2429/PNG/512/fancy_logo_icon_147290.png" alt="Logo" class="logo">
         <h2>로그인</h2>
         <!-- 성공 메세지 출력 -->
-        <%
-        String success = (String)request.getParameter("Message");
-        if(success != null){
-        %>
-        <p class="message success"><%= success %></p>
-        <% } %>
+        <c:if test="${not empty param.message}">
+        <p class="message success">${param.message}</p>
+        </c:if>
+
         <!-- 절대 경로로 주소를 설계 해보자 -->
         <form action="/mvc/user/signIn" method="post">
             <div class="form-group">
